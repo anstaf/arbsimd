@@ -239,7 +239,6 @@ if(NOT ARB_USE_BUNDLED_JSON)
 else()
   unset(nlohmann_json_DIR CACHE)
 endif()
-add_subdirectory(ext)
 
 cmake_dependent_option(ARB_USE_BUNDLED_FMT "Use bundled FMT lib." ON "ARB_USE_BUNDLED_LIBS" OFF)
 
@@ -476,34 +475,11 @@ endforeach()
 # arbor-public-headers:
 add_subdirectory(arbor/include)
 
-# arbor-sup:
-add_subdirectory(sup)
-
-# modcc, libmodcc:
-add_subdirectory(modcc)
-
-# arbor, arbor-private-headers:
-add_subdirectory(arbor)
-
-# arborenv, arborenv-public-headers:
-add_subdirectory(arborenv)
-
-# arborio, arborio-public-headers:
-add_subdirectory(arborio)
-
 # unit, unit-mpi, unit-local, unit-modcc
 add_subdirectory(test)
 
-# self contained examples:
-add_subdirectory(example)
-
 # html:
 add_subdirectory(doc)
-
-# python interface:
-if(ARB_WITH_PYTHON)
-    add_subdirectory(python)
-endif()
 
 #----------------------------------------------------------
 # Generate CMake config/version files for install.
@@ -540,13 +516,6 @@ endif()
 set(arbor_override_import_lang)
 set(arbor_add_import_libs)
 set(arborenv_add_import_libs)
-set(arborio_add_import_libs)
-
-if(ARB_WITH_GPU)
-    set(arbor_override_import_lang CXX)
-    set(arbor_add_import_libs ${CUDA_LIBRARIES})
-    set(arborenv_add_import_libs ${CUDA_LIBRARIES})
-endif()
 
 # (We remove old generated one so that the generation happens every time we run cmake.)
 file(REMOVE "${CMAKE_CURRENT_BINARY_DIR}/arbor-config.cmake")

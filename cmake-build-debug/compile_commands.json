@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/test",
+  "command": "/usr/bin/c++  -I/Users/antonaf/arbor-ws/arbsimd/test -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.6 -Wall -Wno-missing-braces -Wno-potentially-evaluated-expression -Wno-range-loop-analysis -Wno-unused-function -Wno-unused-local-typedef -Wno-format-security -std=c++17 -o CMakeFiles/gtest.dir/gtest-all.cpp.o -c /Users/antonaf/arbor-ws/arbsimd/test/gtest-all.cpp",
+  "file": "/Users/antonaf/arbor-ws/arbsimd/test/gtest-all.cpp"
+},
+{
+  "directory": "/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/test/unit",
+  "command": "/usr/bin/c++ -DDATADIR=\\\"/Users/antonaf/arbor-ws/arbsimd/test/unit/../swc\\\" -DLIBDIR=\\\"/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/lib\\\" -I/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/test/unit -I/Users/antonaf/arbor-ws/arbsimd/test -I/Users/antonaf/arbor-ws/arbsimd/arbor/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.6 -Wall -Wno-missing-braces -Wno-potentially-evaluated-expression -Wno-range-loop-analysis -Wno-unused-function -Wno-unused-local-typedef -Wno-format-security -march=native -fvisibility=hidden -std=c++17 -o CMakeFiles/unit.dir/test_simd.cpp.o -c /Users/antonaf/arbor-ws/arbsimd/test/unit/test_simd.cpp",
+  "file": "/Users/antonaf/arbor-ws/arbsimd/test/unit/test_simd.cpp"
+},
+{
+  "directory": "/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/test/unit",
+  "command": "/usr/bin/c++ -DDATADIR=\\\"/Users/antonaf/arbor-ws/arbsimd/test/unit/../swc\\\" -DLIBDIR=\\\"/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/lib\\\" -I/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/test/unit -I/Users/antonaf/arbor-ws/arbsimd/test -I/Users/antonaf/arbor-ws/arbsimd/arbor/include -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk -mmacosx-version-min=11.6 -Wall -Wno-missing-braces -Wno-potentially-evaluated-expression -Wno-range-loop-analysis -Wno-unused-function -Wno-unused-local-typedef -Wno-format-security -march=native -fvisibility=hidden -std=c++17 -o CMakeFiles/unit.dir/test.cpp.o -c /Users/antonaf/arbor-ws/arbsimd/test/unit/test.cpp",
+  "file": "/Users/antonaf/arbor-ws/arbsimd/test/unit/test.cpp"
+}
+]
