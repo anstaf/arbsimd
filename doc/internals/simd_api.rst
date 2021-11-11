@@ -22,8 +22,8 @@ only non-zero values in the resultant array.
 
     .. code-block:: cpp
 
-        #include <simd/simd.hpp>
-        using namespace arb::simd;
+        #include <arbsimd/simd.hpp>
+        using namespace arbsimd;
 
         void product_nonzero(int n, const double* a, const double* b, double* result) {
             constexpr int N = simd_abi::native_width<double>::value;

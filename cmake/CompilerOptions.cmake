@@ -6,14 +6,6 @@ include(CMakePushCheckState)
 set(CXXOPT_DEBUG "-g")
 set(CXXOPT_CXX11 "-std=c++11")
 
-if(${ARBDEV_COLOR})
-    set(colorflags
-        $<IF:$<CXX_COMPILER_ID:Clang>,-fcolor-diagnostics,>
-        $<IF:$<CXX_COMPILER_ID:AppleClang>,-fcolor-diagnostics,>
-        $<IF:$<CXX_COMPILER_ID:GNU>,-fdiagnostics-color=always,>)
-    add_compile_options("$<$<COMPILE_LANGUAGE:CXX>:${colorflags}>")
-endif()
-
 # Warning options: disable specific spurious warnings as required.
 
 set(CXXOPT_WALL

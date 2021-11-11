@@ -5,13 +5,23 @@
 		<Option title="arbor"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\scripts\;CMake Files\arbor\;CMake Files\arbor\include\;CMake Files\test\;CMake Files\test\unit\;CMake Files\doc\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\arbor\;CMake Files\arbor\include\;CMake Files\test\;CMake Files\test\unit\;CMake Files\doc\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -52,16 +62,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="install/local">
-				<Option working_dir="/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/antonaf/arbor-ws/arbsimd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -230,9 +230,6 @@
 		<Unit filename="/Users/antonaf/arbor-ws/arbsimd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/antonaf/arbor-ws/arbsimd/cmake/CheckCompilerXLC.cmake">
-			<Option virtualFolder="CMake Files\cmake\"/>
-		</Unit>
 		<Unit filename="/Users/antonaf/arbor-ws/arbsimd/cmake/CompilerOptions.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
@@ -256,9 +253,6 @@
 		</Unit>
 		<Unit filename="/Users/antonaf/arbor-ws/arbsimd/cmake/dummy.cpp">
 			<Option virtualFolder="CMake Files\cmake\"/>
-		</Unit>
-		<Unit filename="/Users/antonaf/arbor-ws/arbsimd/scripts/build-catalogue.in">
-			<Option virtualFolder="CMake Files\scripts\"/>
 		</Unit>
 		<Unit filename="/Users/antonaf/arbor-ws/arbsimd/arbor/include/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\arbor\include\"/>
